@@ -1,0 +1,66 @@
+// FOOTER
+
+.footer {
+  &__container {
+    display: flex;
+    gap: 129rem;
+    flex-direction: row;
+    margin-top: 64rem;
+    margin-bottom: 64rem;
+
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32rem;
+      text-align: center;
+      margin-top: 32rem;
+      margin-bottom: 48rem;
+    }
+  }
+
+  &__logo {
+    @extend .header__logo;
+  }
+  &__link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+
+    @include tablet {
+      gap: 12rem;
+    }
+  }
+
+  &__link-title {
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: var(--acento);
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 143%;
+    letter-spacing: 0.02em;
+    color: var(--blanco);
+  }
+  &__socials {
+    display: flex;
+    gap: 16rem;
+  }
+
+  &__separator {
+    border-bottom: 1px solid var(--bordes);
+  }
+  &__copyright {
+    margin-top: 17rem;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+    color: var(--blanco);
+    margin-bottom: 32rem;
+  }
+}

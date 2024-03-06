@@ -1,0 +1,16 @@
+html {
+  font-size: 1px;
+}
+
+body {
+  font-size: 16rem;
+  background: var(--fondo);
+  color: var(--blanco);
+  font-family: var(--font-family);
+}
+
+.container {
+  padding: 0 20rem;
+  max-width: 1196rem;
+  margin-inline: auto;
+}
